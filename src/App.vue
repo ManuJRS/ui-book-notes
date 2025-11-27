@@ -25,16 +25,17 @@ import BaseText from './components/base/BaseText.vue';
 
       <main class="app-content">
         <article>
-          <BaseTitle :level="1" uppercase>
-            Titulo de ejemplo
+          <BaseTitle level="2" align="left" uppercase>
+            Hola alineado y en mayúsculas
           </BaseTitle>
+
 
           <BaseText>
             Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Delectus at nihil est velit
             eveniet amet!
           </BaseText>
 
-          <BaseCardText title="Este es un ejemplo" :items="['Uno', 'Dos', 'tres']">
+          <BaseCardText title="Este es un ejemplo" :items="['Uno', 'Dos', 'tres', 'cuatro']">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat molestiae amet adipisci. Natus, quis
             consectetur aspernatur tenetur nihil ab.
           </BaseCardText>

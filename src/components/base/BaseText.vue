@@ -22,5 +22,18 @@ const props = defineProps({
     margin: 1rem 0 1rem;
     font-size: 0.95rem;
     line-height: 1.6;
+
+    &--small {
+        font-size: 0.8rem;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    strong {
+        font-weight: 700;
+        text-decoration: underline;
+    }
 }
 </style>
