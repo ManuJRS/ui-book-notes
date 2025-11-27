@@ -1,17 +1,16 @@
 <script setup>
+import BaseTitle from './components/base/BaseTitle.vue';
+import BaseCardText from './components/base/BaseCardText.vue';
+import BaseText from './components/base/BaseText.vue';
 </script>
 
 <template>
   <div class="app">
-    <!-- HEADER -->
     <header class="app-header">
       <h1 class="app-title">UI Study Notes</h1>
       <p class="app-subtitle">Documentando mi avance del libro de UI</p>
     </header>
-
-    <!-- LAYOUT PRINCIPAL -->
     <div class="app-layout">
-      <!-- COLUMNA IZQUIERDA: MENU -->
       <aside class="app-sidebar">
         <nav>
           <h2 class="sidebar-title">Capítulos</h2>
@@ -24,34 +23,21 @@
         </nav>
       </aside>
 
-      <!-- COLUMNA CENTRAL: CONTENIDO -->
       <main class="app-content">
         <article>
-          <h2>Introducción</h2>
-          <p>
-            Aquí vas a ir escribiendo tus notas del libro, resúmenes,
-            ejemplos, screenshots mentales, etc.
-          </p>
+          <BaseTitle :level="1" uppercase>
+            Titulo de ejemplo
+          </BaseTitle>
 
-          <h3>Ejemplo de código</h3>
+          <BaseText>
+            Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Delectus at nihil est velit
+            eveniet amet!
+          </BaseText>
 
-          <!-- BLOQUE DE CÓDIGO -->
-          <pre class="code-block">
-<code>&lt;div class="card"&gt;
-  &lt;h2&gt;Título de ejemplo&lt;/h2&gt;
-  &lt;p&gt;Este es un texto dentro de una card.&lt;/p&gt;
-&lt;/div&gt;
-</code>
-          </pre>
-
-          <h3>Resultado</h3>
-          <!-- RESULTADO DEL CÓDIGO -->
-          <div class="example-preview">
-            <div class="card">
-              <h2>Título de ejemplo</h2>
-              <p>Este es un texto dentro de una card.</p>
-            </div>
-          </div>
+          <BaseCardText title="Este es un ejemplo" :items="['Uno', 'Dos', 'tres']">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat molestiae amet adipisci. Natus, quis
+            consectetur aspernatur tenetur nihil ab.
+          </BaseCardText>
         </article>
       </main>
     </div>
