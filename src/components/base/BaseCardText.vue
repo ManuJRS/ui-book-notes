@@ -23,7 +23,9 @@ const props = defineProps({
     <div class="base-card-text">
         <div v-if="title || $slots.title" class="base-card-text__header">
             <slot name="title">
-                <h2 class="base-card-text__title">{{ title }}</h2>
+                <h2 class="base-card-text__title">
+                    {{ title }}
+                </h2>
             </slot>
         </div>
 
@@ -41,8 +43,6 @@ const props = defineProps({
     </div>
 </template>
 
-
-
 <style scoped>
 .base-card-text {
     margin-top: 0.75rem;
@@ -50,28 +50,32 @@ const props = defineProps({
     background: #020617;
     border-radius: 0.75rem;
     border: 1px solid #1f2933;
-}
 
-.base-card-text__title {
-    margin: 0 0 0.75rem;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
+    &__header {
+        margin-bottom: 0.25rem;
+    }
 
-.base-card-text__body {
-    margin: 0 0 1rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
+    &__title {
+        margin: 0 0 0.75rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
 
-.base-card-text__list {
-    padding-left: 1.25rem;
-    margin: 0;
-}
+    &__body {
+        margin: 0 0 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
 
-.base-card-text__item {
-    margin-bottom: 0.25rem;
-    list-style: disc;
-    font-size: 0.95rem;
+    &__list {
+        padding-left: 1.25rem;
+        margin: 0;
+    }
+
+    &__item {
+        margin-bottom: 0.25rem;
+        list-style: disc;
+        font-size: 0.95rem;
+    }
 }
 </style>

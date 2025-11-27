@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const props = defineProps({
     level: {
@@ -17,18 +17,18 @@ const props = defineProps({
     align: {
         type: String,
         default: 'left'
-    }
+    },
 })
 
-const baseClass = computed(() => `base-title`)
+const headingTag = computed(() => `h${props.level}`)
+
+const baseClass = 'base-title'
 const levelClass = computed(() => `base-title--h${props.level}`)
 const alignClass = computed(() => `base-title--align-${props.align}`)
-const upperClass = computed(() =>
-    props.uppercase ? 'base-title--uppercase' : ''
-)
+const upperClass = computed(() => props.uppercase ? 'base-title--uppercase' : '')
 
-const clasess = computed(() => [
-    baseClass.value,
+const classes = computed(() => [
+    baseClass,
     levelClass.value,
     alignClass.value,
     upperClass.value,
@@ -37,7 +37,7 @@ const clasess = computed(() => [
 </script>
 
 <template>
-    <component :is="levelClass" :class="clasess">
+    <component :is="headingTag" :class="classes">
         <slot>{{ text }}</slot>
     </component>
 </template>
@@ -46,41 +46,41 @@ const clasess = computed(() => [
 .base-title {
     margin: 0;
     line-height: 1.2;
-}
 
-.base-title--h1 {
-    font-size: 2.4rem;
-    font-weight: 700;
-}
+    &--h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
 
-.base-title--h2 {
-    font-size: 2rem;
-    font-weight: 700;
-}
+    &--h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
 
-.base-title--h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
+    &--h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
 
-.base-title--h4 {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
+    &--h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
 
-.base-title--uppercase {
-    text-transform: uppercase;
-}
+    &--uppercase {
+        text-transform: uppercase;
+    }
 
-.base-title--align-left {
-    text-align: left;
-}
+    &--align-left {
+        text-align: left;
+    }
 
-.base-title--align-center {
-    text-align: center;
-}
+    &--align-center {
+        text-align: center;
+    }
 
-.base-title--align-right {
-    text-align: right;
+    &--align-right {
+        text-align: right;
+    }
 }
 </style>
