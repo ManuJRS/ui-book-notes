@@ -15,12 +15,12 @@ import { RouterLink } from 'vue-router';
           <ul class="sidebar-list">
             <li>
               <div class="sidebar-link">
-                <RouterLink to="/" class="router-link">Home</RouterLink>
+                <RouterLink to="/" class="router-link">Inicio</RouterLink>
               </div>
             </li>
             <li>
               <div class="sidebar-link">
-                <RouterLink to="/HowStart" class="router-link">How to Start</RouterLink>
+                <RouterLink to="/HowStart" class="router-link">Como empezar</RouterLink>
               </div>
             </li>
           </ul>
