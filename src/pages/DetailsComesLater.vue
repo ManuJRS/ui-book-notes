@@ -156,4 +156,6 @@ import BaseTitle from '../components/base/BaseTitle.vue';
         y tu imaginación.
     </BaseText>
 
+
+
 </template>
