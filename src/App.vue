@@ -28,6 +28,11 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/DetailsComesLater" class="router-link">Los detalles van después</RouterLink>
               </div>
             </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/WorkInCycles" class="router-link">Trabaja en ciclos</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
