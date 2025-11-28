@@ -1,7 +1,5 @@
 <script setup>
-import BaseTitle from './components/base/BaseTitle.vue';
-import BaseCardText from './components/base/BaseCardText.vue';
-import BaseText from './components/base/BaseText.vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -13,33 +11,24 @@ import BaseText from './components/base/BaseText.vue';
     <div class="app-layout">
       <aside class="app-sidebar">
         <nav>
-          <h2 class="sidebar-title">Capítulos</h2>
+          <h2 class="sidebar-title">Temas</h2>
           <ul class="sidebar-list">
-            <li><button class="sidebar-link">Introducción</button></li>
-            <li><button class="sidebar-link">Principios básicos</button></li>
-            <li><button class="sidebar-link">Tipografía</button></li>
-            <li><button class="sidebar-link">Color</button></li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/" class="router-link">Home</RouterLink>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/HowStart" class="router-link">How to Start</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
 
       <main class="app-content">
-        <article>
-          <BaseTitle level="2" align="left" uppercase>
-            Hola alineado y en mayúsculas
-          </BaseTitle>
-
-
-          <BaseText>
-            Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit. Delectus at nihil est velit
-            eveniet amet!
-          </BaseText>
-
-          <BaseCardText title="Este es un ejemplo" :items="['Uno', 'Dos', 'tres', 'cuatro']">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat molestiae amet adipisci. Natus, quis
-            consectetur aspernatur tenetur nihil ab.
-          </BaseCardText>
-        </article>
+        <RouterView />
       </main>
     </div>
   </div>

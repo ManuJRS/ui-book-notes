@@ -27,10 +27,6 @@ const props = defineProps({
         font-size: 0.8rem;
     }
 
-    &:hover {
-        opacity: 0.8;
-    }
-
     strong {
         font-weight: 700;
         text-decoration: underline;
