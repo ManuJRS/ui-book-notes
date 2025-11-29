@@ -33,6 +33,11 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/WorkInCycles" class="router-link">Trabaja en ciclos</RouterLink>
               </div>
             </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/ChoosePersonality" class="router-link">Elige una personalidad</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
