@@ -38,6 +38,11 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/ChoosePersonality" class="router-link">Elige una personalidad</RouterLink>
               </div>
             </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/LimitYourChoices" class="router-link">Limita tus opciones</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>

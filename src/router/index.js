@@ -4,6 +4,7 @@ import HowStart from '../pages/HowStart.vue'
 import DetailsComesLater from '../pages/DetailsComesLater.vue'
 import WorkInCycles from '../pages/WorkInCycles.vue'
 import ChoosePersonality from '../pages/ChoosePersonality.vue'
+import LimitYourChoices from '../pages/LimitYourChoices.vue'
 
 const routes = [
   { 
@@ -25,6 +26,10 @@ const routes = [
               { 
     path: '/ChoosePersonality', 
     component: ChoosePersonality 
+    },
+                  { 
+    path: '/LimitYourChoices', 
+    component: LimitYourChoices 
     }
 ]
 
