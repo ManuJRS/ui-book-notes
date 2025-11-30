@@ -58,4 +58,76 @@ import BaseTitle from '../components/base/BaseTitle.vue';
         usa mejor un color más claro o un tamaño de fuente más pequeño.
     </BaseText>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-6 border-2 flex justify-center border-green-600 items-center">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm w-full5">
+                <div class="relative">
+                    <img src="https://images.tcdn.com.br/img/img_prod/881969/camisa_supremo_manga_longa_1060010631_1_c1191dcc723c845f36e597079a752819.jpg"
+                        alt="Product image" class="w-full h-64 object-cover">
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h2 class="!text-[24px] !font-bold text-gray-800 mb-1">Premium Wireless Headphones</h2>
+                            <p class="text-[18px] text-slate-400 ">Electronics</p>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <p class="text-[18px] font-bold text-green-600">$129.99</p>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-slate-400 text-[18px] ml-2">(4.5/5)</span>
+                    </div>
+                    <p class="text-[18px] font-normalmb-4 text-slate-600">Experience crystal-clear sound with our
+                        premium
+                        wireless
+                        headphones.
+                        Perfect for music lovers and professionals alike.</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 border-2 flex justify-center items-center border-red-600">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden max-w-sm w-full5">
+                <div class="relative">
+                    <img src="https://images.tcdn.com.br/img/img_prod/881969/camisa_supremo_manga_longa_1060010631_1_c1191dcc723c845f36e597079a752819.jpg"
+                        alt="Product image" class="w-full h-64 object-cover">
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h2 class="!text-[30px] !font-normal text-gray-800 mb-1">Premium Wireless Headphones</h2>
+                            <p class="text-[14px] font-normal text-gray-800 ">Electronics</p>
+                        </div>
+                    </div>
+                    <div class="py-2">
+                        <p class="text-[24px] font-normal text-green-600">$129.99</p>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-800 text-[14px] ml-2">(4.5/5)</span>
+                    </div>
+                    <p class="text-[16px] font-normalmb-4 text-gray-800">Experience crystal-clear sound with our premium
+                        wireless
+                        headphones.
+                        Perfect for music lovers and professionals alike.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </template>
