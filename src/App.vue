@@ -48,6 +48,11 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/NotAllTheSame" class="router-link">No todos son iguales</RouterLink>
               </div>
             </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/SizeIsntEverything" class="router-link">El tamaño no lo es todo</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
