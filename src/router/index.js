@@ -6,6 +6,7 @@ import WorkInCycles from '../pages/WorkInCycles.vue'
 import ChoosePersonality from '../pages/ChoosePersonality.vue'
 import LimitYourChoices from '../pages/LimitYourChoices.vue'
 import NotAllTheSame from '../pages/NotAllTheSame.vue'
+import SizeIsntEverything from '../pages/SizeIsntEverything.vue'
 
 const routes = [
   { 
@@ -35,6 +36,10 @@ const routes = [
     { 
     path: '/NotAllTheSame', 
     component: NotAllTheSame 
+    },
+    { 
+    path: '/SizeIsntEverything', 
+    component: SizeIsntEverything 
     }
 ]
 
