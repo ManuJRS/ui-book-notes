@@ -43,6 +43,11 @@ import { RouterLink } from 'vue-router';
                 <RouterLink to="/LimitYourChoices" class="router-link">Limita tus opciones</RouterLink>
               </div>
             </li>
+            <li>
+              <div class="sidebar-link">
+                <RouterLink to="/NotAllTheSame" class="router-link">No todos son iguales</RouterLink>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
