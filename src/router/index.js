@@ -5,6 +5,7 @@ import DetailsComesLater from '../pages/DetailsComesLater.vue'
 import WorkInCycles from '../pages/WorkInCycles.vue'
 import ChoosePersonality from '../pages/ChoosePersonality.vue'
 import LimitYourChoices from '../pages/LimitYourChoices.vue'
+import NotAllTheSame from '../pages/NotAllTheSame.vue'
 
 const routes = [
   { 
@@ -19,17 +20,21 @@ const routes = [
     path: '/DetailsComesLater', 
     component: DetailsComesLater 
     },
-          { 
+    { 
     path: '/WorkInCycles', 
     component: WorkInCycles 
     },
-              { 
+    { 
     path: '/ChoosePersonality', 
     component: ChoosePersonality 
     },
-                  { 
+    { 
     path: '/LimitYourChoices', 
     component: LimitYourChoices 
+    },
+    { 
+    path: '/NotAllTheSame', 
+    component: NotAllTheSame 
     }
 ]
 
